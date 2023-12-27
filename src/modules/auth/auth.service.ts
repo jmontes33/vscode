@@ -1,4 +1,3 @@
-import { User } from "../user/user.model";
 import { AuthRepository, Login } from "./auth.model";
 
 export const authService = (
@@ -10,10 +9,6 @@ export const authService = (
 
   loginUser: (data: Login) => {
     return authRepository.loginUser(data);
-  },
-
-  createFirstUser: (data: User) => {
-    return authRepository.createFirstUser(data);
   },
 
   refreshTokens: (newRefreshToken: string) => {

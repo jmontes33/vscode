@@ -1,8 +1,5 @@
-import { User } from "../user/user.model";
-
 export interface AuthRepository {
   loginUser: (data: Login) => Promise<Request>;
-  createFirstUser: (data: User) => Promise<Request>;
   getToken: () => string | null;
   refreshTokens: (newRefreshToken: string) => Promise<Request>;
 }

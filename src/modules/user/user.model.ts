@@ -5,8 +5,6 @@ export interface UserRepository {
   getUsers: () => Promise<User[]>;
   getUserById: (id: string) => Promise<User>;
   modifyUserById: (id: string, data: User) => Promise<Request>;
-  createNewUser: (data: User) => Promise<Request>;
-  removeUserById: (id: string) => Promise<Request>;
 }
 
 export interface User {

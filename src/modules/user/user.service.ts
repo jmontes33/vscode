@@ -26,12 +26,4 @@ export const userService = (
   modifyUserById: (id: string, data: User) => {
     return userRepository.modifyUserById(id, data);
   },
-
-  createNewUser: (data: User) => {
-    return userRepository.createNewUser(data);
-  },
-
-  removeUserById: (id: string) => {
-    return userRepository.removeUserById(id);
-  },
 });
